@@ -132,6 +132,44 @@ main > section{
     margin-bottom: 24px;
 }
 
+/* Feature Section Related Style */
+
+.features{
+    gap: 146px;
+}
+#feature-section-tittle{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+.feature-card{
+    padding: 30px 42px 30px 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.feature-tittle{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.experience-badge{
+    padding: 46px 42px;
+    font-family: "Work Sans", serif;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 70px;
+}
+.experience-year{
+    font-family: "Work Sans", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+.btn-experience{
+    margin-left: -100px;
+    margin-top: -123px;
+}
 /* Some Facts Related Style */
 
 .facts-container{
@@ -185,7 +223,8 @@ main > section{
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav-links, 
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .nav-item{
@@ -231,6 +270,16 @@ main > section{
         margin-right: 20px;
         margin-left: 20px;
     }
+    .features{
+        margin: 20px;
+        gap: 50px;
+    }
+    .features img{
+        width: 100%;
+    }
+    .btn-experience{
+        margin: 30px auto;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -257,7 +306,9 @@ main > section{
         margin: 0px 20px;
     }
     .facts-summary{
-        margin: 20px;
+        margin: 20px auto;
+        max-width: 60%;
+        text-align: center;
     }
     .facts-container{
         max-width: calc( 100% - 40px );
@@ -281,5 +332,16 @@ main > section{
         gap: 50px;
         margin: 0 20px 50px 20px;
         justify-items: center;
+    }
+    .features{
+        flex-direction: column;
+        margin: 40px;
+        gap: 80px;
+    }
+    .features img{
+        width: 100%;
+    }
+    .btn-experience{
+        margin: 30px auto;
     }
 }
