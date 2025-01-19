@@ -285,7 +285,8 @@ main > section{
         width: 100%;
     }
     .btn-experience{
-        margin: 30px auto;
+        max-width: calc( 100% - 40px );
+        margin: 30px 20px;
         background-color: #FF900E;
         color: white;
         padding: 20px 25px;
